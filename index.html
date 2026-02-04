@@ -223,7 +223,7 @@
     <div class="app-container">
         <div class="head-banner">
             <div class="head-logo">
-                <img src="https://altaces.netlify.app/Aceslogo.png" alt="Aceslogo">
+                <img src="https://newaces.netlify.app/Aceslogo.png" alt="Aceslogo">
             </div>
             <div class="searchbar-group">
                 <select id="channel-selection">
@@ -236,7 +236,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
-            <div class="quick-link">
+            <div class="quick-link" style="display: none;">
                 <button class="fd-calculator-link">
                     <a href="https://fdcalc.netlify.app" target="_blank">
                         <i class="fa-solid fa-calculator"></i>
@@ -281,6 +281,20 @@
                     </button>
                     <h3>Free-flow</h3>
                     <div class="nav-tooltip">Freeflow Notes</div>
+                </div>
+                <div class="nav-item" style="display: none;">
+                    <button id="check-list-page-action">
+                        <i class="fa-solid fa-list-check"></i>
+                    </button>
+                    <h3>Checklist <i class="fa-solid fa-check"></i></h3>
+                    <div class="nav-tooltip">Process Checklist</div>
+                </div>
+                <div class="nav-item" style="display: none;">
+                    <button id="links-page-action">
+                        <i class="fa-solid fa-link"></i>
+                        <h3>Links</h3>
+                    </button>
+                    <div class="nav-tooltip">Links</div>
                 </div>
             </div>
             <div class="main-page">
@@ -463,7 +477,7 @@
                 <!--Script Page-->
                 <div class="sub-page active" id="script-page">
                     <div class="script-nav-container">
-                        <button id="opening-nav" class="nav-btn active">Opening</button>
+                        <button id="ETG Chat Scripts-nav" class="nav-btn active">ETG Chat Scripts</button>
                     </div>
                     <div class="script-canvas"></div>
                     <!-- Content Ad -->
@@ -472,6 +486,60 @@
                              style="display:inline-block;width:728px;height:90px"
                              data-ad-client="ca-pub-6978764838614552"
                              data-ad-slot="5678901234"></ins>
+                    </div>
+                </div>
+
+                <!--Checklist Page-->
+                <div class="sub-page" id="check-list-page" style="display: none;">
+                    <div class="check-list-nav-container">
+                        <button id="Automated Void-nav" class="listnav-btn">Automated Void</button>
+                        <button id="Automated Exchange-nav" class="listnav-btn">Automated Exchange</button>
+                        <button id="Automated Cancel-nav" class="listnav-btn">Automated Cancel</button>
+                        <button id="Manual Void-nav" class="listnav-btn active">Manual Void</button>
+                        <button id="Manual Partial Exchange-nav" class="listnav-btn">Manual Partial Exchange</button>
+                        <button id="Manual Unused Exchange-nav" class="listnav-btn">Manual Unused Exchange</button>
+                        <button id="Manual Cancel-nav" class="listnav-btn">Manual Cancel</button>
+                    </div>
+                    <div class="checklist-canvas"></div>
+                </div>
+                
+                <div class="sub-page" id="links-page" style="display: none;">
+                    <div class="links-header">
+                        Quick Links
+                    </div>
+                    <div class="links-container">
+                        <div class="links-btn-container">
+                            <button class="link-list">
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=--z4I5BqwkaWyko2JyG4LK80vquCs1VLubaKa5VOj6lUME5JSjgzUlVOMTE2VTNBQzZRVU1MRjQ4MS4u" target="_blank">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <h3>Support Placement / Transfer Tracker</h3>
+                            </a>
+                            </button>
+                            <button class="link-list">
+                            <a href="https://sevav1.netlify.app" target="_blank">
+                                <i class="fa-solid fa-book-open"></i>
+                                <h3>Survey Evaluator App</h3>
+                            </a>
+                            </button>
+                            <button class="link-list">
+                            <a href="https://forms.office.com/r/w3s76mAvUE" target="_blank">
+                                <i class="fa-solid fa-toolbox"></i>
+                                <h3>First Touch and Manual Transaction tracker</h3>
+                            </a>
+                            </button>
+                            <button class="link-list">
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=--z4I5BqwkaWyko2JyG4LK80vquCs1VLubaKa5VOj6lUMlNXMFM5VEIyWVIxVVdSNk1LRkZOR09RNi4u" target="_blank">
+                                <i class="fa-solid fa-stopwatch"></i>
+                                <h3><strong>(Supervisor Only)</strong> 6th-7th Day OT per Week Tracker</h3>
+                            </a>
+                            </button>
+                            <button class="link-list">
+                            <a href="https://forms.office.com/r/N71Lh4Ve3J" target="_blank">
+                                <i class="fa-solid fa-eraser"></i>
+                                <h3>Daily Void Tracker</h3>
+                            </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
