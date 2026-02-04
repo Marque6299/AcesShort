@@ -1,7 +1,7 @@
 // Update the existing checklistcontroll.js with enhanced functionality
 document.addEventListener('DOMContentLoaded', () => {
     const checklistCanvas = document.querySelector('.checklist-canvas');
-    const jsonFilePath = 'https://altaces.netlify.app/checklist.json';
+    const jsonFilePath = 'https://newaces.netlify.app/checklist.json';
 
     // Fetch the checklist data
     fetch(jsonFilePath)
@@ -352,3 +352,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
