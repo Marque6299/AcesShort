@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.id = `${id}-nav`;
             button.className = 'nav-btn';
-            if (id === 'Opening') {
+            if (id === 'ETG Chat Scripts') {
                 button.classList.add('active');
             }
             
@@ -449,4 +449,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
